@@ -1,22 +1,25 @@
 using UnityEngine;
 
+
 public class SpawnManager : MonoBehaviour
 {
     public GameObject[] ObstaclePrefabs;
-    private float spawnRangeX = 20;
+    private float spawnRangeX = 5;
     private float spawnPosZ = 20;
     private float startDelay = 2f;
-    private float spawnInterval = 1.5f;
-    
+    private float spawnInterval = 0.75f;
+   
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         InvokeRepeating("SpawnRandomObstacle", startDelay, spawnInterval);
     }
 
+
     // Update is called once per frame
     void Update()
     {
+
 
     }
     void SpawnRandomObstacle()
