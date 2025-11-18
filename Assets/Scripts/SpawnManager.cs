@@ -5,7 +5,7 @@ public class SpawnManager : MonoBehaviour
 {
     public GameObject[] ObstaclePrefabs;
     private float spawnRangeX = 5;
-    private float spawnPosZ = 20;
+    private float spawnPosZ = 40;
     private float startDelay = 2f;
     private float spawnInterval = 0.75f;
    

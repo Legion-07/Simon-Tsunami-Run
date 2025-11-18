@@ -43,7 +43,10 @@ public class PlayerController : MonoBehaviour
         Vector3 velocity = playerRb.linearVelocity;
         velocity.x = horizontalInput * moveSpeed;
         playerRb.linearVelocity = velocity;
-
+        // Clamp position to stay between -5 and +5 on X axis
+        Vector3 pos = playerRb.position;
+        pos.x = Mathf.Clamp(pos.x, -4.5f, 4.5f);
+        playerRb.position = pos;
     }
 
     private void OnCollisionEnter(Collision collision)
