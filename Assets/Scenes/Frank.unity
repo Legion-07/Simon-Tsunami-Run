@@ -182,7 +182,7 @@ GameObject:
   - component: {fileID: 183654883}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -471,7 +471,7 @@ GameObject:
   - component: {fileID: 958128368}
   m_Layer: 0
   m_Name: Plane (1)
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -694,14 +694,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2694ce06ace89584bb0a577aec1f3e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  visual: {fileID: 0}
   moveSpeed: 5
   jumpForce: 10
-  gravityModifier: 1.5
-  minX: -4.9
-  maxX: 4.9
+  gravityModifier: 2
   isOnGround: 1
   gameOver: 0
+  speed: 10
 --- !u!65 &1139016053
 BoxCollider:
   m_ObjectHideFlags: 0
