@@ -1,19 +1,19 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
-public class DestroyOutOfBounds : MonoBehaviour
+public class MoveObjects : MonoBehaviour
 {
+    public GameObject gameManager;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         
     }
-    private float backBound = -10;
+
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.z < backBound)
-        {
-            Destroy(gameObject);
-        }
+        transform.Translate(Vector3.forward * Time.deltaTime * gameManager.GetComponent<Constants>().speed);
     }
 }

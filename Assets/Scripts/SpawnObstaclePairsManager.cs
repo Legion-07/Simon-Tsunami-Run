@@ -1,7 +1,6 @@
 using UnityEngine;
 
-
-public class SpawnManager : MonoBehaviour
+public class SpawnObstaclePairs : MonoBehaviour
 {
     public GameObject[] ObstaclePrefabs;
     private float spawnRangeX = 5;
