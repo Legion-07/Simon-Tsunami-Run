@@ -84,20 +84,20 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        // LEFT → slide to -5
-        if (Input.GetKeyDown(KeyCode.LeftArrow) && targetX > -4)
+        // left arrow -> slide left 4
+        if ((Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.A)) && targetX > -4)
         {
             targetX = targetX-4f;
         }
 
-        // RIGHT → slide to +5
-        if (Input.GetKeyDown(KeyCode.RightArrow) && targetX < 4) 
+        // right arrow -> slide right 4
+        if ((Input.GetKeyDown(KeyCode.RightArrow) || Input.GetKeyDown(KeyCode.D)) && targetX < 4) 
         {
             targetX = targetX+4f;
         }
 
-        // JUMP
-        if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
+        // Spacebar -> Jump
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)) && isOnGround)
         {
             playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
             isOnGround = false;
@@ -110,10 +110,8 @@ public class PlayerController : MonoBehaviour
 
         // Keep Y/Z physics the same
         Vector3 pos = playerRb.position;
-
         // Smooth slide toward the target lane
         float newX = Mathf.Lerp(pos.x, targetX, Time.fixedDeltaTime * speed);
-
         playerRb.position = new Vector3(newX, pos.y, pos.z);
     }
 

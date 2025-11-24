@@ -150,6 +150,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObstaclePrefabs:
   - {fileID: 8841597907868537267, guid: 9af5a01997065e74698fecf05e58e96b, type: 3}
+  - {fileID: 3386513391961727006, guid: f93d6b022c9c5434b98c754adea54771, type: 3}
+  - {fileID: 5980282755236217523, guid: eafcf1e72d9b8974dab293dd5b1be2f7, type: 3}
+  - {fileID: 8876350447421933553, guid: 8c114f31c1323124c93f610eae67ee47, type: 3}
+  Xpos: fcffffff0000000004000000
 --- !u!4 &54055861
 Transform:
   m_ObjectHideFlags: 0
@@ -694,8 +698,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2694ce06ace89584bb0a577aec1f3e84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  jumpForce: 10
+  moveSpeed: 15
+  jumpForce: 13
   gravityModifier: 2
   isOnGround: 1
   gameOver: 0
