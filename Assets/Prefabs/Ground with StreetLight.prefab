@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3817725322750552758}
-  - component: {fileID: -8174170581060184072}
+  - component: {fileID: -5163230825256185113}
   m_Layer: 0
   m_Name: Ground with StreetLight
   m_TagString: Untagged
@@ -34,7 +34,7 @@ Transform:
   - {fileID: 5351852165931086523}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-8174170581060184072
+--- !u!114 &-5163230825256185113
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -2,27 +2,38 @@ using UnityEngine;
 
 public class RandomBuilding : MonoBehaviour
 {
-    
     public GameObject[] BuildingPrefabs;
     public GameObject Road;
-    public int BuildingIndex;
-    private float spawnRightRangeX = 14;
-    private float spawnPosZ = 180;
-    private float spawnLeftRangeX = -15;
-    private float rotationLeft = 90;
-    private float rotationRight = -90;
+    private float spawnPosZ = 195;
+    private float leftX = -15;
+    private float rightX = 14;
+    private float LeftrotationX = 90;
+    private float RightrotationX = -90;
+    public float ReSpawnTime = 2f;
+
     void Start()
     {
-        Vector3 spawnPossZ = new Vector3(0, 0, 215);
-        Instantiate(Road, spawnPossZ, Road.transform.rotation);
+        InvokeRepeating("SpawnRoad", ReSpawnTime, ReSpawnTime);
+        InvokeRepeating("SpawnBuilding", ReSpawnTime, ReSpawnTime);
     }
 
     void Update()
     {
-        Vector3 LeftSpawn = new Vector3(spawnLeftRangeX, 0, spawnPosZ);
-        int BuildingIndex = Random.Range(0, BuildingPrefabs.Length);
-        Instantiate(BuildingPrefabs[BuildingIndex], LeftSpawn, BuildingPrefabs[BuildingIndex].transform.rotation);
-
-
+        if (transform.position.z <= -50)
+        {
+            Destroy(gameObject);
+        }
     }
+
+    void SpawnBuilding()
+    {
+        int index = Random.Range(0, BuildingPrefabs.Length);
+        Vector3 pos = new Vector3(leftX, 0, spawnPosZ);
+        Instantiate(BuildingPrefabs[index], pos, BuildingPrefabs[index].transform.rotation);
+    }
+    void SpawnRoad()
+    {
+            Instantiate(Road, new Vector3(0, 0, spawnPosZ), Quaternion.identity);
+    }
+
 }
