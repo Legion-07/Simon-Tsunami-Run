@@ -1848,6 +1848,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BuildingPrefabs:
   - {fileID: 8774985052596013064, guid: 9eeed21843fef4244be19e39c7f9ab8f, type: 3}
+  - {fileID: 1245739655184128862, guid: 6d3f916dd7825174590ee241d0768818, type: 3}
+  - {fileID: 8645633831512054671, guid: 0ee4d785716ee6e41a8d8a3295909378, type: 3}
+  - {fileID: 8608486642874007665, guid: d347359b120601b409f5465650e1434e, type: 3}
+  - {fileID: 7466896971342651926, guid: 1648ee1e6afd8224a8e99ae73797d986, type: 3}
+  - {fileID: 8670077108117563414, guid: d319a7e4952b24e40bee4b00001173e8, type: 3}
+  - {fileID: 3839811203701048892, guid: 791e3b3f5a9a8114fbf22ee7aa7a7729, type: 3}
+  - {fileID: 1544705167413847284, guid: c2966483192fc7b4089d6a385f3776b2, type: 3}
   Road: {fileID: 507868496086509418, guid: 744c193ff57b60c40b3a9c1abc505fdc, type: 3}
   ReSpawnTime: 1
 --- !u!1001 &2002405109

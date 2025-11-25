@@ -4,7 +4,7 @@ public class RandomBuilding : MonoBehaviour
 {
     public GameObject[] BuildingPrefabs;
     public GameObject Road;
-    private float spawnPosZ = 195;
+    private float spawnPosZ = 135;
     private float leftX = -15;
     private float rightX = 14;
     private float LeftrotationX = 90;
