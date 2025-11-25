@@ -1,13 +1,14 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 
 public class SpawnManager : MonoBehaviour
 {
     public GameObject[] ObstaclePrefabs;
-    private float spawnRangeX = 5;
-    private float spawnPosZ = 20;
+    public List<int> Xpos = new List<int> { -3, 0, 3 };
+    private float spawnPosZ = 70;
     private float startDelay = 2f;
-    private float spawnInterval = 0.75f;
+    private float spawnInterval = 1.5f;
    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,7 +26,17 @@ public class SpawnManager : MonoBehaviour
     void SpawnRandomObstacle()
     {
         int ObstacleIndex = Random.Range(0, ObstaclePrefabs.Length);
-        Vector3 spawnPos = new Vector3(Random.Range(-spawnRangeX, spawnRangeX), 0, spawnPosZ);
-        Instantiate(ObstaclePrefabs[ObstacleIndex], spawnPos, ObstaclePrefabs[ObstacleIndex].transform.rotation);
+        if (ObstacleIndex == 0)
+        {
+            Vector3 spawnPos = new Vector3(Xpos[Random.Range(0,3)], 0, spawnPosZ);
+            Instantiate(ObstaclePrefabs[ObstacleIndex], spawnPos, ObstaclePrefabs[ObstacleIndex].transform.rotation);            
+        }
+        if (ObstacleIndex > 0)
+        {
+            Vector3 spawnPos = new Vector3(0, 0, spawnPosZ);
+            Instantiate(ObstaclePrefabs[ObstacleIndex], spawnPos, ObstaclePrefabs[ObstacleIndex].transform.rotation);          
+        }
+
+        
     }
-    }
+}

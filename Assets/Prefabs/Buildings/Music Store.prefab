@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 2692873654186237565}
   - component: {fileID: 1582348414203368898}
   - component: {fileID: 2228809493881213819}
-  - component: {fileID: 8989632559371446543}
+  - component: {fileID: 2799467903347969904}
+  - component: {fileID: 6031956953559167475}
   m_Layer: 0
   m_Name: Music Store
   m_TagString: Untagged
@@ -110,7 +111,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &8989632559371446543
+--- !u!114 &2799467903347969904
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,7 +120,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 814357978391622479}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a99d2565dce9ad4d9932edc73888f69, type: 3}
+  m_Script: {fileID: 11500000, guid: 92aea3f217e939b49a26b020abf2041d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+--- !u!114 &6031956953559167475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 814357978391622479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 975e644b8931a624fa2431eff08fc048, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

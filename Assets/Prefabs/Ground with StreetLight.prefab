@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3817725322750552758}
   - component: {fileID: -5163230825256185113}
+  - component: {fileID: -2155593340683325140}
   m_Layer: 0
   m_Name: Ground with StreetLight
   m_TagString: Untagged
@@ -47,6 +48,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+--- !u!114 &-2155593340683325140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507868496086509418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 975e644b8931a624fa2431eff08fc048, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3577755157594609337
 PrefabInstance:
   m_ObjectHideFlags: 0

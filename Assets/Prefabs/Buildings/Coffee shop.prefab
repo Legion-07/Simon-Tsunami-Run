@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8910717180693647465}
   - component: {fileID: 5594869066909924262}
   - component: {fileID: -3478657937317441631}
+  - component: {fileID: 7906587014060328229}
   m_Layer: 0
   m_Name: Coffee shop
   m_TagString: Untagged
@@ -100,3 +101,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+--- !u!114 &7906587014060328229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826701173377393093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 975e644b8931a624fa2431eff08fc048, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

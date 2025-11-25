@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7362123889586304294}
   - component: {fileID: 9144339758800291973}
   - component: {fileID: 3002674971741721042}
+  - component: {fileID: -5667342647574577113}
   m_Layer: 0
   m_Name: Yellow House
   m_TagString: Untagged
@@ -101,6 +102,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+--- !u!114 &-5667342647574577113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202165220344580626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 975e644b8931a624fa2431eff08fc048, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4717739041631635220
 PrefabInstance:
   m_ObjectHideFlags: 0

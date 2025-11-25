@@ -7,8 +7,6 @@ public class RandomBuilding : MonoBehaviour
     private float spawnPosZ = 135;
     private float leftX = -15;
     private float rightX = 14;
-    private float LeftrotationX = 90;
-    private float RightrotationX = -90;
     public float ReSpawnTime = 2f;
 
     void Start()
@@ -27,9 +25,12 @@ public class RandomBuilding : MonoBehaviour
 
     void SpawnBuilding()
     {
-        int index = Random.Range(0, BuildingPrefabs.Length);
-        Vector3 pos = new Vector3(leftX, 0, spawnPosZ);
-        Instantiate(BuildingPrefabs[index], pos, BuildingPrefabs[index].transform.rotation);
+        int Leftindex = Random.Range(0, BuildingPrefabs.Length);
+        int Rightindex = Random.Range(0, BuildingPrefabs.Length);
+        Vector3 Left = new Vector3(leftX, 0, spawnPosZ);
+        Instantiate(BuildingPrefabs[Leftindex], Left, BuildingPrefabs[Leftindex].transform.rotation);
+        Vector3 Right = new Vector3(rightX, 0, spawnPosZ);
+        Instantiate(BuildingPrefabs[Rightindex], Right, BuildingPrefabs[Rightindex].transform.rotation);
     }
     void SpawnRoad()
     {

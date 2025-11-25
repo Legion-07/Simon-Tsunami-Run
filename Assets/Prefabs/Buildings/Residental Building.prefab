@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8157250000533426288}
   - component: {fileID: 3812906372826710488}
   - component: {fileID: 9041615328156533820}
+  - component: {fileID: -4745501701047485268}
   m_Layer: 0
   m_Name: Residental Building
   m_TagString: Untagged
@@ -100,3 +101,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+--- !u!114 &-4745501701047485268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230946299216977074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 975e644b8931a624fa2431eff08fc048, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

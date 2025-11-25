@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4657510433836602880}
   - component: {fileID: 7238891736217399496}
   - component: {fileID: -4413168306286716024}
+  - component: {fileID: 8449230427472941069}
   m_Layer: 0
   m_Name: Building_Auto Service
   m_TagString: Untagged
@@ -102,6 +103,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+--- !u!114 &8449230427472941069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7466896971342651926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 975e644b8931a624fa2431eff08fc048, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4330666602155309969
 PrefabInstance:
   m_ObjectHideFlags: 0
