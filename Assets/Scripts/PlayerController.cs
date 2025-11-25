@@ -53,5 +53,10 @@ public class PlayerController : MonoBehaviour
             isOnGround = true;
 
         }
+        if (collision.gameObject.CompareTag("Wave"))
+        {
+            gameOver = true;
+        }
     }
 }
+

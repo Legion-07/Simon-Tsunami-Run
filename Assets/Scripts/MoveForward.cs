@@ -1,10 +1,9 @@
 using UnityEngine;
 
 
-public class MoveObjects : MonoBehaviour
+public class MoveForward : MonoBehaviour
 {
-    public float speed = 20f;
-
+    public bool gameOver;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,6 +14,9 @@ public class MoveObjects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector3.back * Time.deltaTime * speed);
+        if (!gameOver)
+        {
+            transform.Translate(Vector3.back * Time.deltaTime * gameObject.GetComponent<Constants>().speed);
+        }
     }
 }

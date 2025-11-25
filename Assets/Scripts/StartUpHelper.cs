@@ -8,6 +8,7 @@ public class StartUpHelper : MonoBehaviour
     void Start()
     {
         Vector3 spawnPos = new Vector3(0,0,0);
+        spawnManager.GetComponent<Constants>().speed = 5f;
         Instantiate(spawnManager, spawnPos, spawnManager.transform.rotation);
     }
 

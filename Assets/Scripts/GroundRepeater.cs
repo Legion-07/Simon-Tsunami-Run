@@ -1,7 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 public class RepeatBackground : MonoBehaviour
-
+// IGNORE THIS ENTIRE SCRIPT
 {
     private Vector3 startPos;
     private float repeatWidth;
