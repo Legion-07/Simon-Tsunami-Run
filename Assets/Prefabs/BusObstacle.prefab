@@ -445,7 +445,7 @@ GameObject:
   - component: {fileID: 7301864120699394682}
   m_Layer: 0
   m_Name: BusObstacle
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -504,6 +504,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
+  gameOver: 0
 --- !u!114 &6509887463575167390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -528,3 +529,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84821ccdcf8baca45aba796742c4005d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
+  Wave: {fileID: 0}
+  IsSlow: 0
+  SecondaryWaveSpawnX: -2
+  DeathWaveSpawnX: 0

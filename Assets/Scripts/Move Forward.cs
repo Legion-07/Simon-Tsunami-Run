@@ -17,7 +17,7 @@ public class MoveObjects : MonoBehaviour
     {
         if (!gameOver)
         {
-        transform.Translate(Vector3.back * Time.deltaTime * speed);
+        transform.Translate(Vector3.back * Time.deltaTime * speed, Space.World);
         }
     }
 }
